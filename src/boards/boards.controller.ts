@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Param, Delete, Patch } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Delete, Patch, UsePipes, ValidationPipe } from '@nestjs/common';
 import { BoardsService } from './boards.service';
 import { Board, BoardStatus } from './boards.model';
 import { CreateBoardDto } from './dto/create-board.dto';
@@ -16,6 +16,7 @@ export class BoardsController {
 
     // 만약 1개만 가져오고 싶으면 @Body('title') title 형태로 가져오면 됨
     @Post()
+    @UsePipes(ValidationPipe)  // 이거 안 씌우면 dto에서 pipe에 넣은 유효성 검사 안함
     createBoard(
         // 1. DTO 사용할 경우
         @Body() CreateBoardDto: CreateBoardDto
