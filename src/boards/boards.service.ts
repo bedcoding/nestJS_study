@@ -25,4 +25,22 @@ export class BoardsService {
         this.boards.push(board);
         return board;
     }
+
+    getBoardById(id: string): Board {
+        return this.boards.find((board) => {
+            return board.id === id;
+        })
+    }
+
+    deleteBoard(id: string): void {
+        this.boards = this.boards.filter((board) => {
+            return board.id !== id;  // 같지 않은 것만 남기고 같은건 지운다
+        })
+    }
+
+    updateBoadrdStatus(id: string, status: BoardStatus): Board {
+        const board = this.getBoardById(id);
+        board.status = status;
+        return board;
+    }
 }

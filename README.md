@@ -1,17 +1,11 @@
 ## 개발과정
 1. 모듈 등록: nest g module boards (study1.jpg 파일 참조) => nest에서, generate(생성)한다, 모듈을, 내가 만든 이름으로
-
 2. 위에서 만든 모듈 안에 컨트롤러 생성: nest g controller boards --no-spec (--no-spec: 테스트를 위한 소스코드 생성 안함)
-
 3. 위에서 만든 모듈 안에 서비스 생성: nest g service boards --no-spec
-
 4. 위에서 만든 컨트롤러 안에 핸들러 추가(@Get) => 해당 핸들러 안에서 서비스에 있는 로직 호출
-
 5. Get 추가한 뒤 http://localhost:4000/boards 형태로 주소창 입력하고 엔터치면 boards 컨트롤러가 호출하는 서비스가 호출됨
-
-   ----- 본격적으로 데이터 연동 -----
-
 6. model을 만들어서 필요한 데이터들의 타입 정의 (interface나 class로 정의)
+7. DTO를 이용해서 어떤 형태의 데이터들이 왔다갔다 하는지 정의
 
 
 ## 역할
