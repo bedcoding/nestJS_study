@@ -15,6 +15,10 @@
 11. Entity 생성 (필요한 컬럼들을 클래스 안에서 정의)
 12. Repository 생성해서 DB에 쿼리문 날리기
 
+## graphql 연동 (추가)
+13. npm install @nestjs/graphql apollo-server-express graphql-tools type-graphql graphql
+14. 2번째 모듈인 product 폴더 따로 만들고 app.module.ts에 추가
+
 ## 역할
 1. app 모듈: 모든 대대를 지휘하는 본부
 2. app 안에 있는 모듈들: 병력들의 모임 (1대대, 2대대, 3대대)
