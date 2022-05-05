@@ -10,6 +10,8 @@
 ```
     npm install class-validator class-transformer --save
 ```
+9. typeORM 설치 (npm install pg typeorm @nestjs/typeorm --save)
+10. typeORM 설정폴더 config 만들고 그 밑에 설정파일 추가
 
 ## 역할
 1. app 모듈: 모든 대대를 지휘하는 본부
@@ -43,3 +45,4 @@ but 컨트롤러가 바로 서비스를 사용할 수 없다. A컨트롤러가 B
 - 글로벌 레벨 (클라이언트에서 서버로 주는 모든 요청에 적용 -> 최상단 main.ts에 넣어줌)
 - NestJS에서 기본적으로 만들어놓은 파이프 6종류 있음
 
+8. typeORM으로 DB연동
