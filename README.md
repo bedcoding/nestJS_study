@@ -12,6 +12,7 @@
 ```
 9. typeORM 설치 (npm install pg typeorm @nestjs/typeorm --save)
 10. typeORM 설정폴더 config 만들고 그 밑에 설정파일 추가
+11. Entity 생성 (필요한 컬럼들을 클래스 안에서 정의)
 
 ## 역할
 1. app 모듈: 모든 대대를 지휘하는 본부
