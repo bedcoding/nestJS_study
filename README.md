@@ -4,13 +4,13 @@
 3. 위에서 만든 모듈 안에 서비스 생성: nest g service boards --no-spec
 4. 위에서 만든 컨트롤러 안에 핸들러 추가(@Get) => 해당 핸들러 안에서 서비스에 있는 로직 호출
 5. Get 추가한 뒤 http://localhost:4000/boards 형태로 주소창 입력하고 엔터치면 boards 컨트롤러가 호출하는 서비스가 호출됨
-6. model을 만들어서 필요한 데이터들의 타입 정의 (interface나 class로 정의)
+6. model을 만들어서 필요한 데이터들의 타입 정의 (interface나 class로 정의) => DB연동하면 필요없다
 7. DTO를 이용해서 어떤 형태의 데이터들이 왔다갔다 하는지 정의
 8. Pipe를 통한 유효성 체크 (class-validator, class-transformer)
 ```
     npm install class-validator class-transformer --save
 ```
-9. typeORM 설치 (npm install pg typeorm @nestjs/typeorm --save)
+9. typeORM 설치 (npm install pg typeorm @nestjs/typeorm --save) => 주의: 현재 0.3에는 버그가 있어서 공식문서에서는 0.2를 쓴다 (npm install typeorm@0.2 추천)
 10. typeORM 설정폴더 config 만들고 그 밑에 설정파일 추가
 11. Entity 생성 (필요한 컬럼들을 클래스 안에서 정의)
 12. Repository 생성해서 DB에 쿼리문 날리기
