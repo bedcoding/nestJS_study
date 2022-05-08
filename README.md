@@ -1,3 +1,6 @@
+## 두번째 샘플 제작중
+https://github.com/wordword-ahn/nestjs
+
 ## 개발과정
 1. 모듈 등록: nest g module boards (study1.jpg 파일 참조) => nest에서, generate(생성)한다, 모듈을, 내가 만든 이름으로
 2. 위에서 만든 모듈 안에 컨트롤러 생성: nest g controller boards --no-spec (--no-spec: 테스트를 위한 소스코드 생성 안함)
